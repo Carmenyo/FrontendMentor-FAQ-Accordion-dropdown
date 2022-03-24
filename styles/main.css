@@ -1,0 +1,39 @@
+/* Colors */
+
+/* Mobile: 375px
+- Desktop: 1440px */
+/* font family weigths: 400,700 */
+
+:root {
+--colortext1: hsl(238, 29%, 16%);
+--colortext2: hsl(14, 88%, 65%);
+--colortext3: hsl(237, 12%, 33%);
+--colortext4:hsl(240, 6%, 50%);
+--colorbackgr1: hsl(273, 75%, 66%);
+--colorbackgr2: hsl(240, 73%, 65%);
+--colordividers: hsl(240, 5%, 91%);
+--fontsizebody: 12px;
+--fontfamily: font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
