@@ -1,10 +1,6 @@
-/* Colors */
-
-/* Mobile: 375px
-- Desktop: 1440px */
-/* font family weigths: 400,700 */
 * {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 :root {
   --colortext1: hsl(238, 29%, 16%);
@@ -20,11 +16,9 @@
   --fontweight-bold: 900;
 }
 
-body{
+body {
   display: flex;
-  background-image: linear-gradient(
-hsl(273, 75%, 66%), hsl(240, 73%, 65%)
-  );
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   height: 100vh;
   align-items: center;
   justify-content: center;
@@ -48,13 +42,125 @@ hsl(273, 75%, 66%), hsl(240, 73%, 65%)
   width: 50%;
 }
 
-.text {border-bottom: 1px solid var(--colortext4);
-font-size: var(--fontsizebody);} 
-
-.question {
-display: flex;
-justify-content: space-between;
-margin-top: 10%;
-margin-bottom: 2%;
+.text {
+  border-bottom: 1px solid var(--colortext4);
 }
 
+.question {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+  margin-bottom: 2%;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  outline: none;
+  border: none;
+  background-color: var(--colordividers);
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  color: var(--colortext2);
+}
+.images {
+  width: 50%;
+  padding-bottom: 2%;
+  position: relative;
+}
+
+.image1 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/illustration-woman-online-desktop.svg);
+  background-repeat: no-repeat;
+  background-position-x: -60px;
+  background-position-y: 70px;
+  background-size: 85%;
+  position: absolute;
+  z-index: 1;
+}
+
+.image1 img {
+  position: absolute;
+  top: 35%;
+  left: -26%;
+}
+
+.image2 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-position-x: -575px;
+  background-position-y: -280px;
+  background-size: 195%;
+  position: absolute;
+}
+
+.image2 img,
+.image3 img {
+  display: none;
+}
+
+.imgArrow {
+  transform: rotate(180deg);
+}
+.bold {
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 1440px) {
+  .image1 {
+    background-size: 102%;
+  }
+  .image2 {
+    background-size: 200%;
+    background-position-y: -180px;
+    background-position-x: -395px;
+  }
+
+  .image1 img {
+    top: 40%;
+    left: -38%;
+  }
+
+  @media only screen and (max-width: 400px) {
+    .main {
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+    }
+    .main h1 {
+      text-align: center;
+    }
+    .faq {
+      margin-top: 40%;
+      margin-bottom: 15%;
+      width: 87%;
+    }
+    .button {
+      width: 100%;
+    }
+    .image1 img {
+      display: none;
+    }
+    .image1 {
+      background-image: none;
+    }
+    .image2 img {
+      display: inline-block;
+      position: absolute;
+      top: 106px;
+      right: -30%;
+    }
+
+    .image3 img {
+      display: inline-block;
+    }
+  }
+}
