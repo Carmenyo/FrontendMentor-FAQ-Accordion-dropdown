@@ -27,10 +27,11 @@ body {
 
 .main {
   display: flex;
-  width: 50%;
+  width: 70%;
   background-color: var(--colordividers);
   border-radius: 20px;
 }
+
 .faq {
   display: flex;
   flex-direction: column;
@@ -42,31 +43,25 @@ body {
   width: 50%;
 }
 
-.text {
-  border-bottom: 1px solid var(--colortext4);
-}
-
-.question {
+.item {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-top: 10%;
   margin-bottom: 2%;
 }
 
-.button {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  outline: none;
-  border: none;
-  background-color: var(--colordividers);
-  cursor: pointer;
-  width: 100%;
+.btn-item {
+  font-weight: bolder;
+  width: 100%;  
 }
 
-.button:hover {
-  color: var(--colortext2);
+.imgArrow {
+  width: 12px;
+  height: 12px;
 }
+
+
 .images {
   width: 50%;
   padding-bottom: 2%;
@@ -107,12 +102,12 @@ body {
   display: none;
 }
 
-.imgArrow {
-  transform: rotate(180deg);
+
+.collapsed{
+  display: none;
 }
-.bold {
-  font-weight: bolder;
-}
+
+
 
 @media only screen and (max-width: 1440px) {
   .image1 {

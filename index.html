@@ -10,7 +10,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/main.css">
 
   <title>Frontend Mentor | FAQ Accordion Card</title>
@@ -18,7 +17,7 @@
 </head>
 <body>
 <main class="main">
-<!-- Images -->
+
 <div class="images">
   <div class="image1"><img src="./images/illustration-box-desktop.svg" alt="caja">
  </div>
@@ -32,61 +31,52 @@
 
  <div class="faq">
  <H1>FAQ</H1>
-<div class="text">
-  <div class="question">
-    <button id="button" type="button" data-toogle="collapse">
-      <div class="boldText"> How many team members can I invite?</div>
-      <img src="./images/icon-arrow-down.svg" alt="icon-arrow-down">
-    </button>
-</div>
-  <div class="answer" class="collapse">
-      <p>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
-      </p>
-  </div>
-  <div class="text">
-    <div class="question">
-      <button id="button">
-        <div class="boldText"> What is the maximum file upload size?</div>
-        <img src="./images/icon-arrow-down.svg" alt="icon-arrow-down">
-      </button>
-   </div>
-    <div class="answer">
-        <p> No more than 2GB. All files in your account must fit your allotted storage space.</p>
-  </div>
 
-    <div class="text">
-      <div class="question">
-        <button id="button">
-          <div class="boldText"> How do I reset my password?</div>
-          <img src="./images/icon-arrow-down.svg" alt="icon-arrow-down">
-        </button>
-     </div>
-      <div class="answer">
-          <p> Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
-</p>
-</div>
-      <div class="text">
-        <div class="question">
-          <button id="button">
-            <div class="boldText"> Can I cancel my subscription?</div>
-            <img src="./images/icon-arrow-down.svg" alt="icon-arrow-down">
-          </button>
-       </div>
-        <div class="answer">
+    <div class="item">
+      <div class="btn-item js-btn"> How many team members can I invite?
+      <img  class="imgArrow js-arrow"src="./images/icon-arrow-down.svg" alt="icon-arrow-down">
+      </div>
+      <div class="item-content js-content collapsed">
+      <p>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p> </div>
+    </div>
+
+    <div class="item">
+        <div class="btn-item js-btn"> What is the maximum file upload size?
+        <img  class="imgArrow js-arrow" src="./images/icon-arrow-down.svg" alt="icon-arrow-down">
+        </div>
+        <div class="item-content js-content collapsed ">
+        <p>No more than 2GB. All files in your account must fit your allotted storage space </p>
+      </div>
+    </div>
+
+    <div class="item">
+          <div class="btn-item js-btn"> How do I reset my password?
+          <img  class="imgArrow js-arrow" src="./images/icon-arrow-down.svg" alt="icon-arrow-down">
+          </div>
+          <div class="item-content js-content collapsed">
+          <p> Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
+          </p>
+      </div>
+    </div>
+        
+    <div class="item">
+            <div class="btn-item js-btn"> Can I cancel my subscription?
+            <img  class="imgArrow js-arrow" src="./images/icon-arrow-down.svg" alt="icon-arrow-down">
+    </div>
+            <div class="item-content js-content collapsed">
             <p>  Yes! Send us a message and we’ll process your request no questions asked</p>
       </div>
-        <div class="text">
-          <div class="question">
-            <button id="button">
-              <div class="boldText">Do you provide additional support? </div>
-              <img src="./images/icon-arrow-down.svg" alt="icon-arrow-down">
-            </button>
-         </div>
-          <div class="answer">
+    </div>
+
+    <div class="item">
+              <div class="btn-item js-btn">Do you provide additional support? 
+              <img class="imgArrow js-arrow" src="./images/icon-arrow-down.svg" alt="icon-arrow-down">
+</div>
+          <div class="item-content js-content collapsed">
               <p>  Chat and email support is available 24/7. Phone lines are open during normal business hours.
               </p>
-          </div>      
+        </div>    
+    </div>  
  </main>
 
   <script src="./main.js"></script>
